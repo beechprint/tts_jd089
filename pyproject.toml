@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beechprint-tts_jd089"
+version = "0.1.0"
+description = "统计各来源片段的贡献量与占比，标出语音合成工程师·结构化输出的约束解码上最主要的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "beechprint" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://beechprint.github.io"
+Repository = "https://github.com/beechprint/tts_jd089"
+Issues = "https://github.com/beechprint/tts_jd089/issues"
+
+[project.scripts]
+tts_jd089 = "tts_jd089:main"
+
+[tool.setuptools]
+py-modules = ["tts_jd089"]
